@@ -1,0 +1,66 @@
+[{
+	"Id": "1",
+	"MrJekyll" : {
+		"image" : "images/logo10.png",
+		"title" : "La connaissance s'acquiert par l'expérience, tout le reste n'est que de l'information.",
+		"author" : "Albert Einstein"
+	},
+	"MrHyde" : {
+		"image" : "http://www.lafabriquedexperiences.fr/images/logo8.png",
+		"title" : "Il n'est que l'expérience menée à terme qui libère",
+		"author" : "Derniers Fragments d'un Long Voyage Christiane Singer"
+	}
+},
+{
+	"Id": "2",
+	"MrJekyll" : {
+		"image" : "images/logo3.png",
+		"title" : "Il n'est que l'expérience menée à terme qui libère",
+		"author" : "Derniers Fragments d'un Long Voyage Christiane Singer"
+	},
+	"MrHyde" : {
+		"image" : "http://www.lafabriquedexperiences.fr/images/logo8.png",
+		"title" : "L'expérience est une chose que vous acquérez juste après en avoir eu besoin.",
+		"author" : "Proverbe espagnol"
+	}
+},
+{
+	"Id": "3",
+	"MrJekyll" : {
+		"image" : "images/logo16.png",
+		"title" : "L'esprit n'use de sa faculté créatrice que quand l'expérience lui en impose la nécessité.",
+		"author" : "Henri Poincaré"
+	},
+	"MrHyde" : {
+		"image" : "http://www.lafabriquedexperiences.fr/images/logo10.png",
+		"title" : "La connaissance s'acquiert par l'expérience, tout le reste n'est que de l'information.",
+		"author" : "Albert Einstein"
+	}
+},
+{
+	"Id": "4",
+	"MrJekyll" : {
+		"image" : "images/logo6.png",
+		"title" : "L'expérience est une chose que vous acquérez juste après en avoir eu besoin.",
+		"author" : "Proverbe espagnol"
+	},
+	"MrHyde" : {
+		"image" : "http://www.lafabriquedexperiences.fr/images/logo16.png",
+		"title" : "L'esprit n'use de sa faculté créatrice que quand l'expérience lui en impose la nécessité.",
+		"author" : "Henri Poincaré"
+	}
+},
+{
+	"Id": "5",
+	"MrJekyll" : {
+		"image" : "images/logo8.png",
+		"title" : "Les véritables marges de progrès d'aujourd'hui sont moins dans les machines et dans les Hommes, que dans leur manière d'intéragir ensemble",
+		"author" : "Alexandre Boyer"
+	},
+	"MrHyde" : {
+		"image" : "http://www.lafabriquedexperiences.fr/images/logo8.png",
+		"title" : "Je n’ai pas une seule certitude qui ne me soit venue autrement que par le doute, l’angoisse, la sueur, la douleur de l’expérience",
+		"author" : "Les Lettres Françaises, n° 771, du 30 avril au 6 mai 1959, Aragon"
+	}
+}
+]

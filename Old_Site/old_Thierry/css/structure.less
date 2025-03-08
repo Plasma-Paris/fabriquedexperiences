@@ -1,0 +1,191 @@
+
+/* Smaller screens */
+
+@media only screen and (max-width: 1023px) {
+
+	body {
+	font-size: 14px;
+	line-height: 16px;
+	}
+	
+	}
+
+
+/* Mobile */
+
+@media handheld, only screen and (max-width: 767px) {
+
+	body {
+	font-size: 16px;
+	-webkit-text-size-adjust: none;
+	}
+	.slidelogo {
+		/* width: 100% !important; */
+	}
+	
+	.quote {
+		font-size: 1.75em !important; 
+	}
+	
+	.author {
+		font-size: 1.2em !important;
+	}
+	
+}
+
+
+@original_width: 1333;
+@original_height: 1066;
+
+@wratio : 0,0750187546886722; /* 100/1333 */
+
+@darkgrey : #383838;
+@bgcolor : #f2f3f3;
+
+img {
+	width: 100%;
+}
+
+.basicdiv {
+	position: relative;
+	display: block;
+}
+
+.container {
+	width: 100%;
+}
+
+#header {
+	width: 100%;
+	background-color: #eff0f0;
+}
+
+.inside_header {
+	height:42px;
+	display: block;
+}
+
+.logo {
+	.inside_header;
+	max-width:310px;
+	margin-left: 10.1275%;
+	float:left;
+}
+
+.navigation {
+	position:absolute;
+	z-index: 30;
+	width: 3.125%;
+	height: 100%;
+	top:42px;
+	/*margin-top: 50%;*/
+}
+
+.navigation.go_right {
+	right:0;
+}
+
+.menubar {
+	.inside_header;
+	float:right;
+}
+
+ul.menu {
+	float:right;
+}
+
+ul.menu li {
+	display: inline-block;
+	/*width: 90px;*/
+	margin-top: 7px;
+	height: 35px;
+	margin-left: 20px;
+}
+
+.corner {
+	background-color: red;
+	width : 10.1275%;
+	position: absolute;
+	display: block;
+	clear:both;
+	z-index: 50;
+}
+
+.side_b .corner {
+	right: 0;
+	bottom: 0;
+}
+
+.separator {
+	background-color: @darkgrey;
+	height:6px;
+	width: 100%;
+    clear: both;
+    display: block;
+    height: 6px;
+    position: relative;
+	
+}
+.slide_container {
+	width: 95%;
+	height:90%;
+	display: block;
+	position:absolute;
+	left: 2.5%;
+	margin:auto;
+}
+
+.slide_container.side_a {
+}
+
+.slidecontent {
+	.basicdiv;
+	
+	margin-top: 5%;
+	margin-left : 12%;
+	width:80%;
+	height:80%;
+	float:left;
+	position: absolute;
+}
+
+.slidelogo {
+	width: 80%;
+	z-index : 20;
+	position:absolute;
+	left: 10%;
+}
+
+.slidetext {
+    margin-left: 36%;
+    margin-top: 27.8%;
+	/*margin-top: 50%;*/
+    position: absolute;
+    /*width: 42.03%;*/
+	width: 50%;
+    z-index: 50;
+}
+
+.author {
+    margin-top: 6%;
+    width: 65%;
+	float:right;
+}
+
+.project {
+	height: 80%;
+}
+
+.presentation {
+	position:absolute;
+	z-index: 50;
+	width:45%;
+}
+
+.project .image {
+	width:100%;
+	position:absolute;
+	z-index  : 20;
+	height: 90%;
+	overflow: hidden;
+}

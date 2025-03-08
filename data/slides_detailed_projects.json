@@ -1,0 +1,36 @@
+[{
+	"Id": "1",
+	"MrJekyll" : {
+		"image" : "images/stark.png",
+		"title" : "House Stark",
+		"undertitle" : "History",
+		"description" : "House Stark of Winterfell is one of the Great Houses of Westeros and the principal noble house of The North; many lesser houses are sworn to them. In days of old they ruled as Kings of Winter; since the Targaryen Conquest they have been Wardens of the North. Their seat, Winterfell, is an ancient castle renowned for its strength. Their sigil is a grey direwolf racing across a field of white, and their words are Winter Is Coming, one of only a few house mottoes to be a warning rather than a boast."
+	},
+	"MrHyde" : {
+		"image" : "images/northremember.jpg"		
+	}
+},
+{
+	"Id": "2",
+	"MrJekyll" : {
+		"image" : "images/lan.jpg",
+		"title" : "House Lannister",
+		"undertitle" : "History",
+		"description" : "House Lannister of Casterly Rock is one of the Great Houses of Seven Kingdoms, and the principal house of the Westerlands. Their seat is Casterly Rock, though another branch exists that is based in nearby Lannisport. Their sigil is a golden lion on a field of crimson. Their official motto is Hear me roar! However their unofficial motto, equally well known, is A Lannister always pays his debts."
+	},
+	"MrHyde" : {
+		"image" : "images/lannister.jpg"
+	}
+},
+{
+	"Id": "3",
+	"MrJekyll" : {
+		"image" : "images/arryn.jpg",
+		"title" : "House Arryn",
+		"undertitle" : "History",
+		"description" : "House Arryn of the Eyrie is one of Great Houses of Westeros, and is the principal noble house in the Vale. Their main seat is the Eyrie, but they have many other holdings, including their winter castle at the Gates of the Moon. Both of these fortifications sit astride the Giant's Lance, the tallest mountain in the Vale, and the Eyrie is considered impregnable."
+	},
+	"MrHyde" : {
+		"image" : "images/Housearryn.jpg"
+	}
+}]

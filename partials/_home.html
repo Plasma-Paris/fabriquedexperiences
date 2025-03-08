@@ -1,0 +1,79 @@
+<manager>
+
+<div id="big_container" ng:style="StyleBigContainer">
+	<div id="mask_filter" ng:show="FilterIsOpen" ng:click="OpenFilter()">&nbsp;</div>
+	<div id="show_filter" ng:hide="FilterIsOpen" ng:click="OpenFilter()">&nbsp;</div>
+	<div class="container background" id="background" ng:style="StyleBackground">
+		<div class="inner_background" id="inner_background" ng:style="StyleInnerBackground">	
+			<div class="windows8" ng:style="Loader">
+				<div class="wBall" id="wBall_1">
+					<div class="wInnerBall">
+					</div>
+				</div>
+				<div class="wBall" id="wBall_2">
+					<div class="wInnerBall">
+					</div>
+				</div>
+				<div class="wBall" id="wBall_3">
+					<div class="wInnerBall">
+					</div>
+				</div>
+				<div class="wBall" id="wBall_4">
+					<div class="wInnerBall">
+					</div>
+				</div>
+				<div class="wBall" id="wBall_5">
+					<div class="wInnerBall">
+					</div>
+				</div>
+			</div>	
+
+			<div class="slide_container side_a" id="slide_container_background">
+				<carousel>
+					<slide ng-repeat="slide in AllSlidesJekyll" active="slide.active">
+						<div class="slide" id="slide_background" ng:style="StyleSliderIndex">
+							<div class="slidelogo">
+								<img ng-src="{{slide.MrJekyll.image}}" />
+							</div>
+							<div class="slidetext">
+								<div class="quote">&laquo;&nbsp;{{slide.MrJekyll.title}}&nbsp;&raquo;</div>
+								<div class="author">{{slide.MrJekyll.author}}</div>
+							</div>
+						</div>
+					</slide>		
+				</carousel>									
+			</div>
+		</div>
+			
+		
+	</div> <!-- / .container background -->
+	
+	<div class="container filter" id="filter" ng:class="GetStateFilter()" ng:style="GetStyleFilter()">
+		<div class="inner_shadow">&nbsp;</div>
+		<div class="inner_filter" id="inner_filter" ng:style="StyleInnerFilter">			
+			<div class="slide_container side_a" id="slide_container_filter">
+				<carousel>
+					<slide ng-repeat="slidehyde in AllSlidesHyde" active="slidehyde.active">
+						<div class="slide" id="slide_filter" ng:style="StyleSliderIndex">
+							<div class="slidelogo">
+								<img ng-src="{{slidehyde.MrHyde.image}}" />
+							</div>
+							<div class="slidetext">
+								<div class="quote">&laquo;&nbsp;{{slidehyde.MrHyde.title}}&nbsp;&raquo;</div>
+								<div class="author">{{slidehyde.MrHyde.author}}</div>
+							</div>
+						</div>
+					</slide>		
+				</carousel>							
+			</div>
+		</div>
+	</div> <!-- / .container filter -->
+</div> <!-- / #big_container -->
+				
+<div class="navigation go_left">
+	<img class="valign" id="go_left" src="images/flecheNoire_left.png" ng:click="Previous()" />
+</div>
+	<div class="navigation go_right">
+		<img class="valign" id="go_right" src="images/flecheNoire_right.png" ng:click="Next()" />
+</div>
+</manager>

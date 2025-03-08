@@ -1,0 +1,61 @@
+<div id="big_container" ng:style="StyleBigContainer">
+	<div id="mask_filter" ng:show="FilterIsOpen" ng:click="OpenFilter()">&nbsp;</div>
+	<div id="show_filter" ng:hide="FilterIsOpen" ng:click="OpenFilter()">&nbsp;</div>
+	<div class="container background" id="background" ng:style="StyleBackground">
+	
+		<div class="inner_background" id="inner_background" ng:style="StyleInnerBackground">			
+			<div class="slide_container side_a fullscreen" id="slide_container_background">
+				<carousel> <!-- class="slides_container" -->
+					<div class="slides_container">
+						<slide ng-repeat="slide in AllDetailedProjects" active="slide.active">
+							<div class="slide" id="slide_background" ng:style="StyleSliderIndex">
+								<div class="slidecontent">
+									<div class="left"></div>
+										<div class="project">
+											<div class="title">
+												<h1>{{slide.MrJekyll.title}}</h1>
+												<div class="close"></div>
+											</div>
+											<div class="presentation">
+												<div class="content">
+													<h2>{{slide.MrJekyll.titleh2}}</h2>
+													{{slide.MrJekyll.description}}
+												</div>
+											</div>
+											<div class="imageprojet">
+												<img ng-src="{{slide.MrJekyll.image}}" />
+											</div>
+										</div>
+									<div class="right"></div>
+								</div>
+							</div>
+						</slide>			
+					</div>
+				</carousel>
+			</div>
+		</div>
+			
+		
+	</div> <!-- / .container background -->
+	
+	<div class="container filter" id="filter" ng:class="GetStateFilter()" ng:style="StyleFilter">
+		<div class="inner_shadow">&nbsp;</div>
+		<div class="inner_filter" id="inner_filter" ng:style="StyleInnerFilter">			
+			<div class="slide_container side_a fullscreen" id="slide_container_filter">
+				<carousel> <!-- class="slides_container" -->
+					<div class="slides_container big">
+						<slide ng-repeat="slide in AllDetailedProjects" active="slide.active">
+							<div class="slide">
+								<div>
+									<img ng-src="{{slide.MrHyde.image}}" />
+								</div>
+							</div>
+						</slide>											
+					</div>
+				</carousel>
+			</div>
+		</div>
+			
+		
+	</div> <!-- / .container filter -->
+</div> <!-- / #big_container -->

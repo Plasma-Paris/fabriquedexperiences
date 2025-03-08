@@ -1,0 +1,48 @@
+<div id="big_container" ng:style="StyleBigContainer">
+	<div id="mask_filter" ng:show="FilterIsOpen" ng:click="OpenFilter()">&nbsp;</div>
+	<div id="show_filter" ng:hide="FilterIsOpen" ng:click="OpenFilter()">&nbsp;</div>
+	<div class="container background" id="background" ng:style="StyleBackground">
+		<div class="inner_background" id="inner_background" ng:style="StyleInnerBackground">			
+			<div class="slide_container side_a" id="slide_container_background">
+				<carousel> <!-- class="slides_container" -->
+					<slide ng-repeat="slide in AllSlides" active="slide.active">
+						<div class="slide" id="slide_background" ng:style="StyleSliderIndex">
+							<div class="slidelogo">
+								<img ng-src="{{slide.MrJekyll.image}}" />
+							</div>
+							<div class="slidetext">
+								<div class="quote">{{slide.MrJekyll.title}}</div>
+								<div class="author">{{slide.MrJekyll.author}}</div>
+							</div>
+						</div>
+					</slide>										
+				</carousel>
+			</div>
+		</div>
+			
+		
+	</div> <!-- / .container background -->
+	
+	<div class="container filter" id="filter" ng:class="GetStateFilter()" ng:style="StyleFilter">
+		<div class="inner_shadow">&nbsp;</div>
+		<div class="inner_filter" id="inner_filter" ng:style="StyleInnerFilter">			
+			<div class="slide_container side_a" id="slide_container_filter">
+				<carousel> <!-- class="slides_container" -->
+					<slide ng-repeat="slides in AllSlides" active="slides.active">
+						<div class="slide" id="slide_filter" ng:style="StyleSliderIndex">
+							<div class="slidelogo">
+								<img ng-src="{{slides.MrHyde.image}}" />
+							</div>
+							<div class="slidetext">
+								<div class="quote">{{slides.MrHyde.title}}</div>
+								<div class="author">{{slides.MrHyde.author}}</div>
+							</div>
+						</div>
+					</slide>									
+				</carousel>					
+			</div>
+		</div>
+			
+		
+	</div> <!-- / .container filter -->
+</div> <!-- / #big_container -->

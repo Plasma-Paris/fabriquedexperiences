@@ -1,0 +1,87 @@
+<div id="big_container" ng:style="StyleBigContainer">
+	<div id="mask_filter" ng:show="FilterIsOpen" ng:click="OpenFilter()">&nbsp;</div>
+	<div id="show_filter" ng:hide="FilterIsOpen" ng:click="OpenFilter()">&nbsp;</div>
+	<div class="container background" id="background" ng:style="StyleBackground">
+		<div class="inner_background" id="inner_background" ng:style="StyleInnerBackground">
+			<div class="all_square_project all_sp_background">
+			    <ul id="list_diagonal_projects" class="list_in_bg">
+				<li class="end_project">&nbsp;</li>
+
+				<carousel>
+					<slide ng-repeat="slide in AllProjects" active="slide.active">
+						<a href="#" class="active one_project" ng:click="SelectProject($index)" ng:class="GetCurrentProject($index)">
+							<img ng-src="{{n.MrJekyll.image}}" class="img_project">
+					    </a>
+					</slide>										
+				</carousel>
+
+				<!-- <li ng-repeat="n in AllProjects" class="one_project" data-position-project="{{$index}}" ng:class="GetCurrentProject($index)" ng:click="SelectProject($index)" id="project{{index}}" scroll-to>
+				    <a href="#" class="active">
+					<img ng-src="{{n.MrJekyll.image}}" class="img_project">
+				    </a>
+				</li> -->
+				<li class="end_project">&nbsp;</li>
+			    </ul>
+			</div>
+			<div class="slide_container side_a" id="slide_container_background">
+				<div class="slides_container slides_p">
+					<carousel>
+						<slide ng-repeat="slide in AllProjects" active="slide.active">
+							<div class="slide">
+							    <div class="slidetext slide_project">
+								<div class="title_project">{{slide.MrJekyll.title}}</div>
+								<div class="description_project">
+								    {{slide.MrJekyll.Description}}
+								</div>
+							    </div>
+							</div>
+					</carousel>								
+				</div>
+			</div>
+		</div>
+			
+		
+	</div> <!-- / .container background -->
+	
+	<div class="container filter" id="filter" ng:class="GetStateFilter()">
+		<div class="inner_shadow">&nbsp;</div>
+		<div class="inner_filter" id="inner_filter">
+			<div class="all_square_project all_sp_filter">
+			    <ul id="list_diagonal_projects" class="list_in_filter">
+				<li class="end_project">&nbsp;</li>
+				<li ng-repeat="n in AllProjects" class="one_project slidesjs-pagination-item" data-position-project="{{$index}}" ng:class="GetCurrentProject($index)" ng:click="SelectProject($index)" id="project{{index}}" scroll-to>
+				    <a href="#" class="active">
+					<img ng-src="{{n.MrHyde.image}}" class="img_project">
+				    </a>
+				</li>
+				<li class="end_project">&nbsp;</li>
+			    </ul>    
+			</div>
+			<div class="slide_container side_a" id="slide_container_filter">
+				<div class="slides_container slides_p">
+					<div class="slide" ng-repeat="n in AllProjects">
+					    <div class="slidetext slide_project">
+						<div class="title_project">{{n.MrHyde.title}}</div>
+						<div class="description_project">
+						    {{n.MrHyde.Description}}
+						</div>
+					    </div>
+					</div>
+			    									
+				</div>
+				<a href="#" class="prev2 slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+				<a href="#" class="next2 slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
+								
+			</div>
+		</div>
+			
+		
+	</div> <!-- / .container filter -->
+	<!-- navigation -->
+	<div class="navigation_project go_left">
+		<img id="go_left" src="images/flecheNoire_left.png" ng:click="SelectPreviousProject()" />
+	</div>
+	<div class="navigation_project go_right">
+		<img id="go_right" src="images/flecheNoire_right.png" ng:click="SelectNextProject()" />
+	</div>	
+</div> <!-- / #big_container -->
